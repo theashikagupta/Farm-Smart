@@ -66,21 +66,10 @@ input:focus{
     border-radius: 3rem;
 }
 .right_part i{
-    margin: 0 <div class="box">
-    <img src="chemicalCotton.webp" alt="cotton">
-    <div class="content_info">
-    <div class="content">Chemical Name:</div>
-    <div class="content">Crop Variety:</div>
-    <div class="content">Temperature:</div>
-    <div class="content">Time:</div>
-    <div class="content">Price:</div>
-    </div>
-</div>;
+    margin: 0 
     padding: 0;
 }
-.profile_name{
-    padding: 0.2rem;
-}
+
 #central_part{
     background-color: darkseagreen;
     padding: 1rem;
@@ -152,6 +141,21 @@ input:focus{
     z-index: -1;
     top: 10vh;
     height: 42vh;
+}
+.box img{
+    width: 20vw;
+    height: 25vh;
+    padding: 1rem 1rem;
+}
+#rotation{
+    background-color:darkolivegreen;
+    padding: 1rem;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    top: 10vh;
+    height: 42vh;
+    
 }
 .box img{
     width: 20vw;
