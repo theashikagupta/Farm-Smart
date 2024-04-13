@@ -1,0 +1,160 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#top-nav-bar{
+    
+    position: fixed;
+    width: 100vw;
+    color:white;
+    background-color:darkseagreen;
+    height: 10vh;
+    justify-content: space-between;
+}
+.menu_icon{
+
+    width: 5vw;
+    padding: 1rem;
+}
+.icon_name{
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 500;
+    margin: 0.4rem;
+} 
+input{
+    outline: none;
+    padding-left: 0.5rem;
+    width: 25rem;
+    height: 6vh;
+    background-color: #0f0f0f;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    color: white;
+}
+input:focus{
+    transition: all 0.5s;
+    border: 1px solid #065fd4;
+}
+.search_icon{
+    width: 4rem;
+    height: 6vh;
+    position: relative;
+    background-color:hsl(0, 0%, 18.82%); 
+
+
+}
+.mic{
+    margin: 0.5rem;
+    background-color: #0f0f0f;
+    height: 6vh;
+    width: 3rem;
+    border-radius: 3rem;
+}
+.right_part i{
+    margin: 0 <div class="box">
+    <img src="chemicalCotton.webp" alt="cotton">
+    <div class="content_info">
+    <div class="content">Chemical Name:</div>
+    <div class="content">Crop Variety:</div>
+    <div class="content">Temperature:</div>
+    <div class="content">Time:</div>
+    <div class="content">Price:</div>
+    </div>
+</div>;
+    padding: 0;
+}
+.profile_name{
+    padding: 0.2rem;
+}
+#central_part{
+    background-color: darkseagreen;
+    padding: 1rem;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    top: 10vh;
+    height: 40vh;
+    display:inline-block;
+    justify-content: initial;
+    flex-wrap: wrap;
+}
+.crops{
+    /* display: inline-block;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-column-gap: 10px;
+
+}
+
+
+
+
+.crops img{
+    width: 20vw;
+    height: 25vh;
+    display: inline-block;
+    
+}
+.content_info{
+    size: 5rem;
+    padding: 0.23rem;
+    width: 15vw;
+
+
+}
+.box{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    display: inline-block;
+    
+    
+}
+#lower_part{
+    background-color:darkolivegreen;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    top: 10vh;
+    height: 48vh;
+    display:inline-block;
+    justify-content: initial;
+    flex-wrap: wrap;
+}
+.content_info{
+    size: 5rem;
+    padding: 0.23rem;
+    width: 20vw;
+    padding-left: 1rem;
+
+
+}
+#down_part{
+    background-color:darkgreen;
+    padding: 1rem;
+    width: 100vw;
+    position: relative;
+    z-index: -1;
+    top: 10vh;
+    height: 42vh;
+}
+.box img{
+    width: 20vw;
+    height: 25vh;
+    padding: 1rem 1rem;
+}

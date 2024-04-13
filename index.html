@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crop Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .card h2 {
+      margin-top: 0;
+    }
+    
+    .card p {
+      margin-bottom: 0;
+    }
+    
+    .toggle-button {
+      display: none;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        width: 100%;
+      }
+      
+      .card {
+        margin-bottom: 10px;
+      }
+      
+      .toggle-button {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+      }
+      
+      .nav-links a {
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Information</h1>
+    <button class="toggle-button" onclick="toggleNav()">Toggle Navigation</button>
+    <div class="nav-links">
+      <a href="#cotton">Cotton</a>
+      <a href="#wheat">Wheat</a>
+      <a href="#rice">Rice</a>
+    </div>
+    <div class="card" id="cotton">
+      <h2>Cotton</h2>
+      <p>Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae. The fiber is almost pure cellulose.</p>
+    </div>
+    <div class="card" id="wheat">
+      <h2>Wheat</h2>
+      <p>Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide staple food. There are many different varieties of wheat, but the most widely grown is common wheat (Triticum aestivum).</p>
+    </div>
+    <div class="card" id="rice">
+      <h2>Rice</h2>
+      <p>Rice is a grain crop and the seed of the grass species Oryza sativa (Asian rice) or Oryza glaberrima (African rice). As a cereal grain, it is the most widely consumed staple food for a large part of the world's human population, especially in Asia.</p>
+    </div>
+  </div>
+  <script>
+    function toggleNav() {
+     const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
